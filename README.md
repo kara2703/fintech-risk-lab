@@ -27,10 +27,13 @@ cd backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-uvicorn app.main:app --reload
+bash run_backend.sh
 ```
 
 Runs at `http://127.0.0.1:8000`.
+
+`run_backend.sh` uses reload settings that only watch `backend/app` and ignore `.venv`,
+so your server does not continuously restart when dependencies change.
 
 ## Sample API call
 

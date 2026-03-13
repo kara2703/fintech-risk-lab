@@ -41,6 +41,23 @@ label {
   gap: 0.5rem;
 }
 
+.slider-field small {
+  color: #90a3cc;
+  font-size: 0.78rem;
+}
+
+.slider-row {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+input[type='range'] {
+  accent-color: #64a2ff;
+  padding: 0;
+}
+
 input,
 select {
   border: 1px solid #2d426f;
@@ -58,6 +75,12 @@ button {
 .error {
   color: #ff8b8b;
   margin-top: 0.8rem;
+}
+
+.market-message {
+  margin-top: 0.8rem;
+  color: #9fd8ff;
+  font-size: 0.92rem;
 }
 
 .result-grid {
@@ -125,6 +148,40 @@ button {
   margin-top: 1rem;
   color: #afbddf;
   font-size: 0.92rem;
+}
+
+.forecast-rail {
+  position: relative;
+  margin-top: 1rem;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #b54049 0%, #f0b35f 50%, #39a870 100%);
+}
+
+.forecast-marker {
+  position: absolute;
+  top: -6px;
+  width: 2px;
+  height: 24px;
+  background: #f4f7ff;
+}
+
+.forecast-marker.p05,
+.forecast-marker.p95 {
+  background: #f8d2d2;
+}
+
+.forecast-marker.median {
+  background: #ffffff;
+}
+
+.forecast-labels {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  font-size: 0.86rem;
+  color: #b5c4e8;
 }
 
 footer {
