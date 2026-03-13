@@ -22,6 +22,11 @@ header p {
   margin-top: 1rem;
 }
 
+.card h2,
+.card h3 {
+  margin-top: 0.4rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -59,6 +64,67 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 0.5rem 1rem;
+}
+
+.pill-row {
+  margin: 0.6rem 0 0.3rem;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid;
+  text-transform: capitalize;
+  font-size: 0.85rem;
+}
+
+.pill.low {
+  color: #95f0b2;
+  border-color: #2f8f57;
+}
+
+.pill.moderate {
+  color: #f7dd7f;
+  border-color: #927b2f;
+}
+
+.pill.elevated {
+  color: #ffc68d;
+  border-color: #995f1f;
+}
+
+.pill.high {
+  color: #ff9ea4;
+  border-color: #a03b44;
+}
+
+.scenario-table {
+  margin-top: 0.7rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.scenario-header {
+  font-size: 0.78rem;
+  color: #9cb0da;
+  text-transform: uppercase;
+}
+
+.scenario-row {
+  display: contents;
+}
+
+.scenario-row span {
+  font-size: 0.94rem;
+}
+
+.interpretation {
+  margin-top: 1rem;
+  color: #afbddf;
+  font-size: 0.92rem;
 }
 
 footer {
