@@ -1,0 +1,68 @@
+.app {
+  width: min(900px, 95vw);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.4rem;
+  color: #a8b3cf;
+}
+
+.card {
+  background: #11182b;
+  border: 1px solid #24314f;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #c9d5f0;
+  gap: 0.5rem;
+}
+
+input,
+select {
+  border: 1px solid #2d426f;
+  border-radius: 8px;
+  padding: 0.6rem;
+  background: #0f1730;
+  color: #ffffff;
+}
+
+button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.error {
+  color: #ff8b8b;
+  margin-top: 0.8rem;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #9aa6c7;
+}
