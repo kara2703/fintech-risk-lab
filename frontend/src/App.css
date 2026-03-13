@@ -1,3 +1,8 @@
+.app,
+.app * {
+  box-sizing: border-box;
+}
+
 .app {
   width: min(900px, 95vw);
   margin: 0 auto;
@@ -31,6 +36,11 @@ header p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
+  align-items: start;
+}
+
+.grid > * {
+  min-width: 0;
 }
 
 label {
@@ -48,7 +58,7 @@ label {
 
 .slider-row {
   display: grid;
-  grid-template-columns: 1fr 120px;
+  grid-template-columns: minmax(0, 1fr) minmax(84px, 108px);
   gap: 0.6rem;
   align-items: center;
 }
@@ -56,6 +66,12 @@ label {
 input[type='range'] {
   accent-color: #64a2ff;
   padding: 0;
+  min-width: 0;
+}
+
+.slider-row input[type='number'] {
+  width: 100%;
+  min-width: 0;
 }
 
 input,
@@ -70,6 +86,14 @@ select {
 button {
   margin-top: 1rem;
   width: 100%;
+  color: #f2f6ff;
+  background: #1b2a4a;
+  border-color: #35558f;
+}
+
+button:disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
 }
 
 .error {
@@ -182,6 +206,12 @@ button {
   gap: 0.5rem;
   font-size: 0.86rem;
   color: #b5c4e8;
+}
+
+@media (max-width: 640px) {
+  .slider-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 footer {
